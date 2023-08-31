@@ -1,0 +1,16 @@
+server:
+  port: 8085
+  address: localhost
+spring:
+  datasource:
+    url:  jdbc:mysql://localhost:3308/myuserdb
+    username: root
+    password: Averano87!
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        ddl-auto: validate
+        '[format_sql]': true
+        dialect: org.hibernate.dialect.MySQLDialect
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
